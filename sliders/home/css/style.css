@@ -1,0 +1,129 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins";
+	overflow: hidden;
+}
+
+#.banner-1,{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+img{
+	width: 120%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	animation: zoom-out 8s linear infinite;
+}
+
+@keyframes zoom-out{
+	100%{
+		width: 100%;
+	}
+}
+
+.text-box{
+	width: 600px;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	color: #000000;
+	transform: translateX(50%);
+	animation: textup 12s linear infinite;
+}
+
+.text-box h1{
+	margin-bottom: 40px;
+}
+
+.text-box p{
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 80px;
+}
+
+
+
+.banner-1{
+	animation: slide-1 12s linear infinite;
+}
+
+@keyframes slide-1{
+	0%{
+		visibility: visible;
+	}
+	25%{
+		visibility: visible;
+	}
+	50%{
+		visibility: visible;
+	}
+	75%{
+		visibility: visible;
+	}
+	100%{
+		visibility: visible;
+	}
+
+}
+
+@keyframes textup{
+	10%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+.banner-1 .text-box h5{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #0075f6;
+}
+
+.banner-1 .text-box h1{
+	font-size: 60px;
+    color: #000000;
+    line-height: 1.2;
+    font-weight: 800;
+}
+.banner-1 .text-box h1 span{
+	font-weight: 800;
+    color: #0075f6;
+}
+
+.btn-custom{
+    border: 1px solid #0075f6;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.btn-box a {
+    -webkit-transition: 2s all ease;
+    -o-transition: 2s all ease;
+    transition: 2s all ease;
+    color: #0075f6;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #0075f6;
+    outline: none !important;
+    border: 2px solid #0075f6;
+	font-weight: 800;
+    font-size: 14px;
+
+}
